@@ -1,0 +1,8 @@
+export { default as Navbar } from "./Navbar/Navbar"
+export { default as Hero } from "./Hero/Hero"
+export { default as Campaign } from "./Campaign/Campaign"
+export { default as Mission } from "./Mission/Mission" 
+export { default as Features } from "./Features/Features"
+export { default as AboutUs } from "./AboutUs/AboutUs"
+export { default as Contact } from "./ContactUs/Contact"
+export { default as Footer } from "./Footer/Footer"

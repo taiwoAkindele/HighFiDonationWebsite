@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    font-family: "Mulish", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    font-family: "Mulish", sans-serif;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover{
+    color: #24A086;
+}
+
+button{
+    cursor: pointer;
+}
+
+button:hover{
+    opacity: 0.5;
+}
+
+li {
+    list-style: none;
+}
+
+.wrapper{
+    background-image: url(./assets/bg-image.png);
+    height: 100vh;
+    background-size: cover;
+}
+
+@media (max-width:375px) {
+    .wrapper{
+        background-image: url(./assets/mobileHero.png);
+        background-size: cover;
+    }
+}

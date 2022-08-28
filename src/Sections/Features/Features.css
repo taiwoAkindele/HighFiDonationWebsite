@@ -1,0 +1,50 @@
+.features{
+    display: flex;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-bottom: 9rem;
+    gap: 6rem;
+}
+
+.phone-img{
+    width: 35rem;
+    object-fit: contain;
+}
+
+.fearturesCards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    text-align: justify;
+}
+
+.features-card{
+    display: flex;
+    flex-direction: column;
+    align-items: justify;
+    flex: 1 1 204px;
+    gap: 1rem;
+}
+
+@media (max-width:375px) {
+    .features{
+        display: flex;
+        flex-direction: column-reverse;
+        padding-top: 2rem;
+        padding-bottom: 7rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        gap: 0;
+    }
+    .features-card{
+        display: flex;
+        flex-direction: column;
+        align-items: justify;
+        flex: 1 1 100px;
+        gap: 1rem;
+    }
+    .phone-img{
+        width: 100%;
+        object-fit: contain;
+    }
+}

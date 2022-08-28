@@ -1,0 +1,42 @@
+.textBox{
+    position: relative;
+    padding-bottom: 20rem;
+}
+
+
+.campaign{
+    padding: 6rem 15rem;
+    height: 100%;
+}
+
+.campaignBoxes{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6rem;
+    text-align: center;
+}
+
+.campaign-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 200px;
+    gap: 1rem;
+}
+
+@media (max-width: 375px) {
+    .campaign{
+        padding: 0 1rem;
+    }
+    .campaignBoxes{
+        gap: 2rem;
+        text-align: justify;
+    }
+    .campaign-card{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        flex: 1 1 150px;
+        gap: 1rem;
+    }
+}

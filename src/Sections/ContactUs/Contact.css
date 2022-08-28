@@ -1,0 +1,111 @@
+.contact {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 3rem;
+    padding-left: 7.5rem;
+    padding-top: 8rem;
+    padding-bottom: 7rem;
+}
+
+.formWrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #24A086;
+    border-radius: 10px;
+    padding: 2rem 4rem;
+    color: #FFFFFF;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    padding: 3rem 0;
+}
+
+.form .input {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form .input input {
+    border-radius: 6px;
+    background: #FFFFFF;
+    border: none;
+    width: 23.5rem;
+    height: 4rem;
+    outline: none;
+}
+
+.form .input textarea {
+    border-radius: 6px;
+    background: #FFFFFF;
+    border: none;
+    outline: none;
+}
+
+.submit-btn {
+    background: #02664B;
+    border-radius: 6px;
+    padding: 1rem 2rem;
+    border: none;
+    color: #FFFFFF;
+}
+
+.contactSupport {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    width: 24rem;
+    top: -2rem;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 40px rgba(114, 114, 114, 0.1);
+    border-radius: 47px;
+    padding: 1rem 2rem;
+}
+
+.ellipse{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 15rem;
+    background: #FFFFFF;
+    height: 20px;
+    width: 20px;
+    border-radius: 6px;
+transform: rotate(45deg);
+}
+
+@media (max-width:375px) {
+    .contact {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 1rem 2rem;
+    }
+    .contact-text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .formWrapper {
+        padding: 2rem 1rem;
+    }
+    .form .input input {
+        width: 100%;
+    }
+    .contactSupport {
+        width: auto;
+        top: -2rem;
+        padding: 1rem 2rem;
+    }
+    .ellipse{
+        left: 9rem;
+    }
+}
