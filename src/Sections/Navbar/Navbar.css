@@ -6,13 +6,17 @@
     color: #FFFFFF;
     background: rgba(0, 0, 0, 0.2)
 }
+.appLogo{
+    font-weight: 800; 
+    font-size: 1.5rem; 
+    line-height: 1.875rem;
+}
 .links{
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 20rem;
 }
-
 .links ul {
     display: flex;
     align-items: center;
@@ -31,7 +35,6 @@
     padding: 1rem 3rem;
     gap: .5rem;
 }
-
 .mobileLinks ul {
     display: flex;
     flex-direction: column;
@@ -39,12 +42,10 @@
     justify-content: space-between;
     gap: 3rem;
 }
-
 .links ul li {
     font-weight: 400;
     font-size: 18px;
 }
-
 .nav-btn {
     background: #06C18E;
     border-radius: 50px;
@@ -54,7 +55,6 @@
     font-weight: 700;
     font-size: 18px;
 }
-
 .menu{
     display: none;
     cursor: pointer;

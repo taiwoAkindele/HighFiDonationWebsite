@@ -1,5 +1,3 @@
-import { Typography } from "@mui/material"
-
 //images
 import Community from "../assets/community.png"
 import LoveandHealth from "../assets/loveandhealth.png"

@@ -1,4 +1,3 @@
-import { Typography } from "@mui/material"
 import { useState } from "react"
 
 import Playstore from "../../assets/google-playstore-white.png"
@@ -44,17 +43,7 @@ const Contact = () => {
         <div className="contact">
             <div className="formWrapper">
                 <div className="contactSupport">
-                    <Typography variant="h5" sx={{
-                        fontFamily: "Mulish",
-                        fontWeight: 700,
-                        fontSize: "2.2rem",
-                        lineHeight: "2.8rem",
-                        textAlign: "center",
-                        color: "#24A086",
-                        "@media screen and (max-width:375px)": {
-                            fontSize: "1.5rem",
-                        }
-                    }}>Contact Support</Typography>
+                    <h5 className="contact-title">Contact Support</h5>
                 </div>
                 <img className="ellipse" src={polygon} alt="" />
                 <form className="form" onSubmit={handleSubmit} action="">
@@ -75,63 +64,23 @@ const Contact = () => {
                 </form>
             </div>
             <div className="contact-text">
-                <Typography variant="h5" sx={{ 
-                    paddingBottom: "4rem", 
-                    fontFamily: "Mulish", 
-                    fontWeight: 700, 
-                    fontSize: "2.2rem", 
-                    lineHeight: "2.8rem", 
-                    color: "#000000",
-                    "@media screen and (max-width:375px)": {
-                        paddingBottom: "1rem",
-                        fontSize: "1.1rem",
-                        textAlign: "center",
-                    }
-                     }}>We are here for you!</Typography>
-                <Typography variant="p" sx={{ 
-                        paddingBottom: "1.5rem", 
-                        fontFamily: "Mulish", 
-                        fontWeight: 400, 
-                        fontSize: "1.1rem", 
-                        lineHeight: "1.4rem", 
-                        color: "#000000",
-                        "@media screen and (max-width: 375px)": {
-                        fontSize: "0.75rem", 
-                        lineHeight: "0.9rem", 
-                        textAlign: "center",
-                        }
-                         }}>Nulla quis lorem ut libero malesuada feugiat.<br />{""}
+                <h5 className="text-title">We are here for you!</h5>
+                <p className="text-subtitle">Nulla quis lorem ut libero malesuada feugiat.<br />{""}
                         Sed porttitor lectus nibh. Vivamus magna justo, lacinia<br />{""}
                         eget consectetur sed, convallis at tellus.<br /><br />{""}
 
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br />{""}
                         Curabitur non nulla sit amet nisl tempus convallis quis<br />{""}
                         clectus. Vivamus suscipit tortor eget felis porttitor volutpat.
-                    </Typography>
+                    </p>
                 <div className="mission-btn">
                 <button>
                         <img src={Playstore} alt="" />
-                        <Typography sx={{ 
-                            fontFamily: "Mulish", 
-                            textAlign: "justify", 
-                            lineHeight: "18px",
-                            "@media screen and (max-width: 375px)": {
-                                fontSize: "0.75rem",
-                                lineHeight: "0.9rem",
-                            } 
-                            }}>Get it on<br /> <span>Playstore</span></Typography>
+                        <h6 className="button-text">Get it on<br /> <span>Playstore</span></h6>
                     </button>
                     <button>
                         <img src={Appstore} alt="" />
-                        <Typography sx={{ 
-                            fontFamily: "Mulish", 
-                            textAlign: "justify", 
-                            lineHeight: "18px",
-                            "@media screen and (max-width: 375px)": {
-                                fontSize: "0.75rem",
-                                lineHeight: "0.9rem",
-                            } 
-                             }}>Download on the<br /> <span>Applestore</span></Typography>
+                        <h6 className="button-text">Download on the<br /> <span>Applestore</span></h6>
                     </button>
                 </div>
             </div>

@@ -1,2 +1,2 @@
-export { default as Card } from "./Card"
+export { default as Card } from "./Card/Card"
 export { default as TextBox } from "./TextBox"

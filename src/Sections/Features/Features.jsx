@@ -1,5 +1,4 @@
-import { Typography } from "@mui/material"
-import Card from "../../Components/Card"
+import { Card } from "../../Components/index"
 import { featuresText } from "../../Data/ExampleText"
 
 //images
@@ -14,7 +13,7 @@ const Features = () => {
         <img className="phone-img" src={Phone} alt="" />
 
         <div className="features-text">
-            <Typography variant="h5" sx={{paddingBottom: "2rem",fontFamily: "Mulish",fontWeight: 700,fontSize: "2.2rem",lineHeight: "2.8rem",color: "#000000"}}>Features</Typography>
+            <h5 className="features-title">Features</h5>
             <div className="fearturesCards">
             {featuresText.map((text) => (
                 <Card className="features-card" title={text.title} image={text.image} text={text.text} />

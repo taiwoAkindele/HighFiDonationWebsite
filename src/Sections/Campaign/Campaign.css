@@ -1,22 +1,31 @@
-.textBox{
+.textBox {
     position: relative;
     padding-bottom: 20rem;
 }
 
-
-.campaign{
-    padding: 6rem 15rem;
+.campaign {
+    padding: 0rem 15rem;
     height: 100%;
 }
 
-.campaignBoxes{
+.campaign-title {
+    padding-bottom: 2rem;
+    font-family: "Mulish";
+    font-weight: 800;
+    font-size: 2.2rem;
+    line-height: 2.8rem;
+    text-align: center;
+    color: #449183;
+}
+
+.campaignBoxes {
     display: flex;
     flex-wrap: wrap;
     gap: 6rem;
     text-align: center;
 }
 
-.campaign-card{
+.campaign-card {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -25,14 +34,22 @@
 }
 
 @media (max-width: 375px) {
-    .campaign{
+    .campaign {
         padding: 0 1rem;
     }
-    .campaignBoxes{
+
+    .campaign-title {
+        padding: 5rem 4rem;
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+    }
+
+    .campaignBoxes {
         gap: 2rem;
         text-align: justify;
     }
-    .campaign-card{
+
+    .campaign-card {
         display: flex;
         flex-direction: column;
         align-items: flex-start;

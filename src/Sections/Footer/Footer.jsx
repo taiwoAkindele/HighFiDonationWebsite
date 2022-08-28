@@ -23,45 +23,18 @@ const Footer = () => {
     return (
         <div className="footer">
             <div className="downloadApp">
-                <Typography variant="h6" sx={{
-                    fontFamily: "Mulish",
-                    fontWeight: 700,
-                    fontSize: "1.5rem",
-                    lineHeight: "1.8rem",
-                    color: "#FFFFFF",
-                    "@media screen and (max-width:375px)": {
-                        fontSize: "1.1rem",
-                    }
-                }}>DownloadApp</Typography>
+                <h6 className="footer-title">DownloadApp</h6>
                 <div className="social-media">
                     <a href="#"><img src={facebook} alt="" /></a>
                     <a href="#"><img src={instagram} alt="" /></a>
                     <a href="#"><img src={twitter} alt="" /></a>
                 </div>
-                <Typography variant="subtitle1" sx={{
-                    fontFamily: "Mulish",
-                    fontWeight: 400,
-                    fontSize: "1.1rem",
-                    lineHeight: "1.4rem",
-                    color: "#FFFFFF",
-                    "@media screen and (max-width:375px)": {
-                        fontSize: "0.75rem",
-                    }
-                }}>Copyright Donation App 2020</Typography>
+                <p className="copyright">Copyright Donation App 2020</p>
             </div>
 
             <div className="footer-links">
                 <div className="support">
-                    <Typography variant="subtitle1" sx={{
-                        fontFamily: "Mulish",
-                        fontWeight: 700,
-                        fontSize: "1.1rem",
-                        lineHeight: "1.4rem",
-                        color: "#FFFFFF",
-                        "@media screen and (max-width:375px)": {
-                            fontSize: "0.75rem",
-                        }
-                    }}>Support</Typography>
+                    <p className="support-title">Support</p>
                     <ul>
                         <li><a href="#">Campaign</a></li>
                         <li><a href="#">Support</a></li>
@@ -69,16 +42,7 @@ const Footer = () => {
                     </ul>
                 </div>
                 <div className="company">
-                    <Typography variant="subtitle1" sx={{
-                        fontFamily: "Mulish",
-                        fontWeight: 700,
-                        fontSize: "1.1rem",
-                        lineHeight: "1.4rem",
-                        color: "#FFFFFF",
-                        "@media screen and (max-width:375px)": {
-                            fontSize: "0.75rem",
-                        }
-                    }}>Company</Typography>
+                    <p className="company-title">Company</p>
                     <ul>
                         <li><a href="#">About</a></li>
                         <li><a href="#">Contact</a></li>
@@ -87,21 +51,10 @@ const Footer = () => {
                 </div>
             </div>
             <div className="subscribe">
-                <Typography variant="h6" sx={{
-                    paddingBottom: "2rem",
-                    fontFamily: "Mulish",
-                    fontWeight: 700,
-                    fontSize: "1.5rem",
-                    lineHeight: "1.8rem",
-                    textAlign: "center",
-                    color: "#FFFFFF",
-                    "@media screen and (max-width:375px)": {
-                        fontSize: "0.8rem"
-                    }
-                }}>
+                <h6 className="subscribe-text">
                     Need updates on campaigns? <br />{""}
                     Send us your mail
-                </Typography>
+                </h6>
                 <form onSubmit={handleSubmit}>
                     <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Enter your email" />
                     <button className="subscribe-btn" type="submit">Send</button>

@@ -5,14 +5,28 @@
    justify-content: space-between;
    gap: 10rem;
 }
-
+.mission-title{
+        padding-bottom: 1.5rem;
+        font-family: "Mulish";
+        font-weight: 700;
+        font-size: 2.2rem; 
+        line-height: 2.8rem; 
+        color: #000000;
+}
+.mission-text{
+    padding-bottom: 1.5rem;
+    font-family: "Mulish";
+    font-weight: 400;
+    font-size: 1.1rem; 
+    line-height: 1.4rem; 
+    color: #000000;
+}
 .mission-btn{
     display: flex;
     align-items: center;
     gap: 2rem;
     padding: 2rem 0;
 }
-
 .mission-btn button{
     width: 14rem;
     display: flex;
@@ -23,24 +37,19 @@
     border-radius: 32px;
     border: none;
 } 
-
 .mission-btn button:nth-child(1) {
     padding: .7rem .5rem;
 }
-
 .mission-btn button:nth-child(2) {
     padding: .5rem .5rem;
 }
-
 .mission-btn button span {
     font-weight: 800;
     font-size: 1.1rem;
 }
-
 .right, .left{
     position: relative;
 }
-
 .walking{
     position: absolute;
     top: 5rem;
@@ -59,6 +68,15 @@
         justify-content: space-between;
         gap: 3rem;
      }
+     .mission-title{
+        font-size: 1.5rem; 
+        text-align: center;
+    }
+    .mission-text{
+            font-size: 0.75rem;
+            line-height: 0.9rem;
+            text-align: center;
+    }
      .missionText {
         width: 100vw;
         display: flex;

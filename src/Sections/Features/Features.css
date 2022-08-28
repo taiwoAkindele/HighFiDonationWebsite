@@ -5,19 +5,24 @@
     padding-bottom: 9rem;
     gap: 6rem;
 }
-
+.features-title{
+    padding-bottom: 2rem;
+    font-family: "Mulish";
+    font-weight: 700;
+    font-size: 2.2rem;
+    line-height: 2.8rem;
+    color: #000000;
+}
 .phone-img{
     width: 35rem;
     object-fit: contain;
 }
-
 .fearturesCards{
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
     text-align: justify;
 }
-
 .features-card{
     display: flex;
     flex-direction: column;

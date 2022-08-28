@@ -1,4 +1,3 @@
-import { Typography } from "@mui/material"
 //images
 import arrowLeft from "../../assets/arrowLeft.png"
 import arrowRight from "../../assets/arrowRight.png"
@@ -14,9 +13,9 @@ const Hero = () => {
         <div className="arrow">
           <img src={arrowRight} alt="" />
         </div>
-        <Typography gutterBottom variant="h5">Donate to a campaign <br />{''}&amp; Get your campaign <br />{''}
+        <h5 className="heading">Donate to a campaign <br />{''}&amp; Get your campaign <br />{''}
           funded!
-        </Typography>
+        </h5>
         <div className="arrow">
           <img src={arrowLeft} alt="" />
         </div>
@@ -30,11 +29,11 @@ const Hero = () => {
         <div className="hero-btn">
           <button>
             <img src={Playstore} alt="" />
-            <Typography variant="subtitle1">Get it on <br /> <span>Playstore</span></Typography>
+            <p className="hero-btn-text">Get it on <br /> <span>Playstore</span></p>
           </button>
           <button>
             <img src={Appstore} alt="" />
-            <Typography variant="subtitle1">Download on the <br /> <span>Applestore</span></Typography>
+            <p className="hero-btn-text">Download on the <br /> <span>Applestore</span></p>
           </button>
         </div>
       </div>

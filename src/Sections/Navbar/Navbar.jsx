@@ -1,5 +1,3 @@
-import { Typography } from "@mui/material"
-
 //styles
 import "./Navbar.css"
 
@@ -20,7 +18,7 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <div className="logo">
-        <Typography variant="span" sx={{ fontWeight: 800, fontSize: "1.5rem", lineHeight: "1.875rem", }}>DonationApp</Typography>
+        <span className="appLogo">DonationApp</span>
       </div>
         <div className={open ? "links" : "mobileLinks"}>
           <ul>
