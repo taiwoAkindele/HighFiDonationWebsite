@@ -1,12 +1,14 @@
 .contact {
     display: flex;
-    justify-content: space-between;
-    padding-right: 3rem;
-    padding-left: 7.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6rem;
+    /* padding-right: 3rem;
+    padding-left: 7.5rem; */
     padding-top: 8rem;
     padding-bottom: 7rem;
 }
-.contact-title{
+.contact-title {
         font-family: "Mulish";
         font-weight: 700;
         font-size: 2.2rem;
@@ -66,13 +68,6 @@
     border: none;
     outline: none;
 }
-.submit-btn {
-    background: #02664B;
-    border-radius: 6px;
-    padding: 1rem 2rem;
-    border: none;
-    color: #FFFFFF;
-}
 .contactSupport {
     display: flex;
     flex-direction: column;
@@ -103,15 +98,40 @@ transform: rotate(45deg);
     line-height: 18px;
 }
 
-@media (max-width:375px) {
-    .contact {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
+@media (max-width:550px) {
+    .contactSupport {
+        width: auto;
+        top: -2rem;
         padding: 1rem 2rem;
     }
+    .text-title {
+        padding-bottom: 1rem;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .text-subtitle {
+        font-size: .8rem; 
+        line-height: 1.5rem; 
+        text-align: center;
+        }
+    .form .input input {
+        width: auto;
+    }
+    .ellipse{
+        left: 11rem;
+    }
+    .mission-btn button{
+        width: auto;
+    } 
+    .button-text{
+        font-size: 0.75rem;
+        line-height: 0.9rem;
+    }
+}
+
+@media (max-width:375px) {
     .contact-title {
-        font-size: 1.5rem,
+        font-size: 1.5rem;
     }
     .contact-text{
         display: flex;
@@ -140,7 +160,7 @@ transform: rotate(45deg);
         padding: 1rem 2rem;
     }
     .ellipse{
-        left: 9rem;
+        left: 7rem;
     }
     .button-text{
         font-size: 0.75rem;

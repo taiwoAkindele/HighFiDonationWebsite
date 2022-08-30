@@ -1,4 +1,5 @@
 .mission{
+    width: 100%;
    display: flex;
    padding: 9rem 7.5rem;
    align-items: center;
@@ -56,6 +57,37 @@
     right: 5rem;
 }
 
+@media (max-width: 1120px) {
+    .mission{
+       flex-wrap: wrap;
+       justify-content: center;
+     }
+    .walking{
+        width: 100%;
+        position: absolute;
+        top: 3.5rem;
+        right: 2.5rem;
+    }
+    .hands{
+        width: 100%;
+        object-fit: contain;
+    }
+
+}
+
+@media (max-width:550px) {
+    .mission-btn button span {
+        font-weight: 800;
+        font-size: 0.8rem;
+    }
+    .mission-btn button{
+        width: auto;
+    } 
+    .btn-text {
+        font-size: .5rem;
+    }
+}
+
 @media (max-width: 375px) {
     .mission{
         display: flex;
@@ -78,25 +110,11 @@
             text-align: center;
     }
      .missionText {
-        width: 100vw;
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 0 auto;
     }
-    .mission-btn{
-        display: flex;
-        align-items: center;
-        gap: .5rem;
-        padding: 1rem 2rem;
-    }
-    .mission-btn button span {
-        font-weight: 800;
-        font-size: 0.8rem;
-    }
-    .mission-btn button{
-        width: 11rem;
-    } 
     .walking{
         width: 100%;
         position: absolute;

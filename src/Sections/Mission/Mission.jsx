@@ -25,27 +25,11 @@ const Mission = () => {
                 <div className="mission-btn">
                     <button>
                         <img src={Playstore} alt="" />
-                        <p className="btn-text" sx={{ 
-                            fontFamily: "Mulish", 
-                            textAlign: "justify", 
-                            lineHeight: "18px",
-                            "@media screen and (max-width: 375px)": {
-                                fontSize: "0.75rem",
-                                lineHeight: "0.9rem",
-                            } 
-                            }}>Get it on<br /> <span>Playstore</span></p>
+                        <p className="btn-text">Get it on<br /> <span>Playstore</span></p>
                     </button>
                     <button>
                         <img src={Appstore} alt="" />
-                        <p className="btn-text" sx={{ 
-                            fontFamily: "Mulish", 
-                            textAlign: "justify", 
-                            lineHeight: "18px",
-                            "@media screen and (max-width: 375px)": {
-                                fontSize: "0.75rem",
-                                lineHeight: "0.9rem",
-                            } 
-                             }}>Download on the<br /> <span>Applestore</span></p>
+                        <p className="btn-text">Download on the<br /> <span>Applestore</span></p>
                     </button>
                 </div>
             </div>

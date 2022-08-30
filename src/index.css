@@ -40,9 +40,16 @@ li {
 }
 
 .wrapper{
-    background-image: url(./assets/bg-image.png);
+    background-image: url(./assets/bg-image.svg);
     height: 100vh;
+    width: 100%;
     background-size: cover;
+}
+
+@media (max-width:1075px) {
+    .wrapper{
+       height: 100vh;
+    }
 }
 
 @media (max-width:375px) {

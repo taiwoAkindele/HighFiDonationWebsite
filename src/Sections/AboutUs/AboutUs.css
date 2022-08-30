@@ -12,11 +12,13 @@
 }
 .aboutUsCards{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     gap: 4rem;
 }
 .about-card{
+    flex: 1 1 150px;
     display: flex;
     flex-direction: column-reverse;
     gap: 1rem;

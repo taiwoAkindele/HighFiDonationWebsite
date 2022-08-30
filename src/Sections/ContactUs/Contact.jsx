@@ -43,7 +43,7 @@ const Contact = () => {
         <div className="contact">
             <div className="formWrapper">
                 <div className="contactSupport">
-                    <h5 className="contact-title">Contact Support</h5>
+                    <span className="contact-title">Contact Support</span>
                 </div>
                 <img className="ellipse" src={polygon} alt="" />
                 <form className="form" onSubmit={handleSubmit} action="">

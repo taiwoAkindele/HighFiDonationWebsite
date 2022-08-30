@@ -7,6 +7,7 @@
 }
 .features-title{
     padding-bottom: 2rem;
+    padding-left: 1.5rem;
     font-family: "Mulish";
     font-weight: 700;
     font-size: 2.2rem;
@@ -26,9 +27,26 @@
 .features-card{
     display: flex;
     flex-direction: column;
-    align-items: justify;
+    padding: 0 1.5rem;
     flex: 1 1 204px;
     gap: 1rem;
+}
+
+@media (max-width:1120px) {
+    .features{
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        padding-top: 2rem;
+        padding-bottom: 7rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        gap: 0;
+    }
+    .phone-img{
+        width: 100%;
+        object-fit: contain;
+    }
 }
 
 @media (max-width:375px) {
@@ -47,9 +65,5 @@
         align-items: justify;
         flex: 1 1 100px;
         gap: 1rem;
-    }
-    .phone-img{
-        width: 100%;
-        object-fit: contain;
     }
 }
